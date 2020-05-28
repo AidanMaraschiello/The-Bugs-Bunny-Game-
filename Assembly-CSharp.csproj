@@ -81,6 +81,7 @@
     <Compile Include="Assets\New Folder\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\New Folder\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\New Folder\CurveControlledBob.cs" />
+    <Compile Include="Assets\New Folder\Jump.cs" />
     <Compile Include="Assets\New Folder\Pickup.cs" />
     <Compile Include="Assets\New Folder\Player.cs" />
     <Compile Include="Assets\New Folder\SimpleMouseRotator.cs" />

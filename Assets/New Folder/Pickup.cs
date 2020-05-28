@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
+    public AudioClip pickupSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,9 @@ public class Pickup : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<Player>().objectsCollected++;
+            AudioSource audio = other.gameObject.transform.GetChild(0).GetComponent<AudioSource>();
+            audio.clip = pickupSound;
+            audio.Play();
             Destroy(gameObject);
 
 
